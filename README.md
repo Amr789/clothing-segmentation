@@ -20,5 +20,5 @@ The model is designed to produce high-quality binary masks (Clothing vs. Backgro
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/Amr789/Clothing-Segmentation-CVCY002-](https://github.com/Amr789/Clothing-Segmentation-CVCY002-)
+   git clone [https://github.com/Amr789/clothing-segmentation](https://github.com/Amr789/clothing-segmentation)
    cd clothing-segmentation
