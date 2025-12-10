@@ -17,8 +17,14 @@ The model is designed to produce high-quality binary masks (Clothing vs. Backgro
 * Python 3.8+
 * GPU recommended (CUDA)
 
-### Setup
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/Amr789/clothing-segmentation](https://github.com/Amr789/clothing-segmentation)
-   cd clothing-segmentation
+## ☁️ Run on Google Colab
+
+You can run this project entirely in the cloud using Google Colab's free GPUs (T4).
+
+### 1. Setup Environment
+Open a new Colab notebook and run the following in the first cell to clone the repo and install dependencies:
+
+```python
+!git clone [https://github.com/Amr789/clothing-segmentation.git](https://github.com/Amr789/clothing-segmentation.git)
+%cd clothing-segmentation
+!pip install -r requirements.txt -q
