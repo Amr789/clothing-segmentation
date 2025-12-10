@@ -25,6 +25,15 @@ You can run this project entirely in the cloud using Google Colab's free GPUs (T
 Open a new Colab notebook and run the following in the first cell to clone the repo and install dependencies:
 
 ```python
-!git clone [https://github.com/Amr789/clothing-segmentation.git](https://github.com/Amr789/clothing-segmentation.git)
+# 1. Clone repository
+!git clone https://github.com/Amr789/clothing-segmentation.git
+
+# 2. Enter the directory
 %cd clothing-segmentation
+
+# 3. Install dependencies from requirements file
 !pip install -r requirements.txt -q
+
+# 4. Mount Google Drive (To save your trained model later)
+from google.colab import drive
+drive.mount('/content/drive')
