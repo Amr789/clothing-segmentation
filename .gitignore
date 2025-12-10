@@ -1,0 +1,17 @@
+# Ignore Data
+data/
+*.zip
+*.tar.gz
+
+# Ignore Python Cache
+__pycache__/
+*.py[cod]
+
+# Ignore Model Weights (Too large for standard Git)
+*.pth
+best_model.pth
+
+# Ignore Virtual Environments
+venv/
+.env
+.ipynb_checkpoints/
