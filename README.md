@@ -37,18 +37,19 @@ Open a new Colab notebook and run the following in the first cell to clone the r
 # 4. Mount Google Drive (To save your trained model later)
 from google.colab import drive
 drive.mount('/content/drive')
+```
 
 ### 2. Downloading ATR Dataset & Data preparation
 
 ```python
 !python main.py --mode setup
-
+```
 
 ### 3. Model Training
 
 ```python
 !python main.py --mode train --epochs 15
-
+```
 
 ### 4. Inference & Prediction
 
@@ -59,4 +60,4 @@ drive.mount('/content/drive')
 # Display the result
 from IPython.display import Image
 Image("output_cutout.png")
-
+```
