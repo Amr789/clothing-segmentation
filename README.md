@@ -5,10 +5,6 @@ This project implements a U-Net based semantic segmentation model to automatical
 
 The model is designed to produce high-quality binary masks (Clothing vs. Background), enabling "Virtual Try-On" applications by creating transparent cutouts of clothing.
 
-### Run on Google Colab
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Amr789/clothing-segmentation/)
-
 
 ## Key Features
 * **Architecture:** U-Net with MobileNetV2 backbone (Pre-trained on ImageNet).
@@ -46,7 +42,7 @@ clothing-segmentation/
 * Python 3.8+
 * GPU recommended (CUDA)
 
-## Run on Google Colab
+### Run on Google Colab
 
-You can run this project entirely in the cloud using Google Colab's free GPUs (T4).
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Amr789/clothing-segmentation/)
 
