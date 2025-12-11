@@ -31,6 +31,7 @@ clothing-segmentation/
 ├── main.py                  # CLI Entry point (Train/Predict)
 ├── README.md                # Project documentation
 └── requirements.txt         # Python dependencies
+```
 
 
 ## Installation
