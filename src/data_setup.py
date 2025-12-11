@@ -18,16 +18,16 @@ def save_single_image(item, idx, img_dir, mask_dir):
         mask = np.array(item['mask'])
         cv2.imwrite(mask_path, mask)
     except Exception as e:
-        print(f"⚠️ Error saving image {idx}: {e}")
+        print(f"Error saving image {idx}: {e}")
 
 def prepare_dataset(num_train=400, num_val=50):
     """Downloads and extracts the ATR dataset."""
     train_dir = os.path.join(Config.DATA_DIR, "images/train")
     if os.path.exists(train_dir) and len(os.listdir(train_dir)) >= num_train:
-        print("✅ Data already present. Skipping download.")
+        print("Data already present. Skipping download.")
         return
 
-    print("⬇️ Downloading ATR Dataset (Metadata only)...")
+    print("Downloading ATR Dataset (Metadata only)...")
     hf_dataset = load_dataset("mattmdjaga/human_parsing_dataset")
 
     base = Config.DATA_DIR
@@ -37,7 +37,7 @@ def prepare_dataset(num_train=400, num_val=50):
     ]
 
     for hf_split, local_split, count in splits:
-        print(f"⚡ Processing {local_split} split ({count} images)...")
+        print(f"Processing {local_split} split ({count} images)...")
         img_dir = os.path.join(base, "images", local_split)
         mask_dir = os.path.join(base, "masks", local_split)
         os.makedirs(img_dir, exist_ok=True)
@@ -49,4 +49,4 @@ def prepare_dataset(num_train=400, num_val=50):
         with ThreadPoolExecutor(max_workers=4) as executor:
             list(tqdm(executor.map(worker, subset, range(count)), total=count))
 
-    print("✅ Data preparation complete!")
+    print("Data preparation complete!")
