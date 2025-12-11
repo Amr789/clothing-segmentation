@@ -30,6 +30,7 @@ clothing-segmentation/
 ├── LICENSE                  # MIT License
 ├── main.py                  # CLI Entry point (Train/Predict)
 ├── README.md                # Project documentation
+├── Test.jpg                # Image that can be used to test the model
 └── requirements.txt         # Python dependencies
 ```
 
