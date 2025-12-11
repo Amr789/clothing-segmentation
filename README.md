@@ -32,6 +32,7 @@ clothing-segmentation/
 ├── README.md                # Project documentation
 └── requirements.txt         # Python dependencies
 
+
 ## Installation
 
 ### Prerequisites
